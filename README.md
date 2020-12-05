@@ -128,6 +128,11 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，内测小组成员</td>
     <td><a href="https://aaa">知乎</a></td>
   </tr>
+  <tr>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">苏丽敏</span></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">北京理工大学硕士，Datawhale成员，助教</td>
+    <td><a href="https://aaa">CSDN</a></td>
+  </tr>
 </tbody>
 </table> 
 
