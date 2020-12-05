@@ -1,18 +1,10 @@
 本章主要讲解数据库安装和数据库基本介绍，考虑易用性及普及度，本课程采取mysql进行教学。
 
-# 1.1 学习目标
-
-- 初步认识数据库
-
-- 独立完成安装mysql数据库
-
-- 初识 SQL
-
-# 1.2 初识数据库
+# 1.1 初识数据库
 
 数据库是将大量数据保存起来，通过计算机加工而成的可以进行高效访问的数据集合。该数据集合称为数据库（Database，DB）。用来管理数据库的计算机系统称为数据库管理系统（Database Management System，DBMS）。
 
-### 1.2.1 DBMS的种类
+### 1.1.1 DBMS的种类
 
 DBMS 主要通过数据的保存格式（数据库的种类）来进行分类，现阶段主要有以下 5 种类型.
 
@@ -39,34 +31,13 @@ DBMS 主要通过数据的保存格式（数据库的种类）来进行分类，
 
 本课程将向大家介绍使用 SQL 语言的数据库管理系统，也就是关系数据库管理系统（RDBMS）的操作方法。
 
-### 1.2.2 RDBMS的常见系统结构
+### 1.1.2 RDBMS的常见系统结构
 
 使用 RDBMS 时，最常见的系统结构就是客户端 / 服务器类型（C/S类型）这种结构（图 1-3）
 
 ![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch01/ch01.01%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.jpg)
 
-# 
-# 1.3 Mysql 安装
-
-Mysql 官网下载地址：[https://dev.mysql.com/downloads/windows/installer/8.0.html](https://dev.mysql.com/downloads/windows/installer/8.0.html)
-
-win10 安装教程
-
-[Win10_MySQL8.0数据库安装.pdf](https://uploader.shimo.im/f/LhWu5sQlez3EJhog.pdf)
-
-mac 安装教程
-
-[mac_MySQL安装.pdf](https://uploader.shimo.im/f/pK94IyTr98lhL9Qr.pdf)
-
-# 1.4 数据库工具安装
-
-在上一个步骤安装mysql软件时， 可以勾选的 MySQL Workbench 组件，即为 MySQL 官方数据库工具软件，类似的备选方案有如下几种，大家可以按需选择。
-
-* navicat，需获取正版授权
-* sqlyog， 需获取正版授权
-* DBeaver，开源免费
-* xampp，一套开发组件，可以省去 MySQL 安装步骤，开源免费
-# 1.5 初识 SQL
+# 1.2 初识 SQL
 
 ![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch01/ch01.02%E8%A1%A8%E7%9A%84%E7%A4%BA%E4%BE%8B.jpg)
 
@@ -121,7 +92,7 @@ DCL（Data Control Language，数据控制语言） 用来确认或者取消对�
 
 实际使用的 SQL 语句当中有 90% 属于 DML，本书同样会以 DML 为中心进行讲解。
 
-### 1.5.1 SQL的基本书写规则
+### 1.2.1 SQL的基本书写规则
 
 * SQL语句要以分号（ ; ）结尾
 * SQL 不区分关键字的大小写，但是插入到表中的数据是区分大小写的
@@ -140,7 +111,7 @@ SQL 语句的单词之间需使用半角空格或换行符来进行分隔，且�
 
 
 
-### 1.5.2 数据库的创建（ CREATE DATABASE 语句）
+### 1.2.2 数据库的创建（ CREATE DATABASE 语句）
 
 语法：
 
@@ -151,7 +122,7 @@ CREATE DATABASE < 数据库名称 > ;
 ```sql
 CREATE DATABASE shop;
 ```
-### 1.5.3 表的创建（ CREATE TABLE 语句）
+### 1.2.3 表的创建（ CREATE TABLE 语句）
 
 语法：
 
@@ -178,8 +149,8 @@ CREATE TABLE product
  regist_date DATE ,
  PRIMARY KEY (product_id));
 ```
-### 
-### 1.5.4 命名规则
+
+### 1.2.4 命名规则
 
 * 只能使用半角英文字母、数字、下划线（_）作为数据库、表和列的名称
 * 名称必须以半角英文字母开头
@@ -188,7 +159,7 @@ CREATE TABLE product
 
 ![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch01/ch01.03%E5%95%86%E5%93%81%E8%A1%A8%E5%92%8C%E5%88%97%E5%90%8D%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png)
 
-### 1.5.5 数据类型的指定
+### 1.2.5 数据类型的指定
 
 数据库创建的表，所有的列都必须指定数据类型，每一列都不能存储与该列数据类型不符的数据。
 
@@ -212,7 +183,7 @@ CREATE TABLE product
 
 用来指定存储日期（年月日）的列的数据类型（日期型）。
 
-### 1.5.6 约束的设置
+### 1.2.6 约束的设置
 
 约束是除了数据类型之外，对列中存储的数据进行限制或者追加条件的功能。
 
@@ -220,7 +191,7 @@ CREATE TABLE product
 
 `PRIMARY KEY`是主键约束，代表该列是唯一值，可以通过该列取出特定的行的数据。
 
-### 1.5.7 表的删除和更新
+### 1.2.7 表的删除和更新
 
 * 删除表的语法：
 ```sql
@@ -317,7 +288,8 @@ UPDATE product
  WHERE product_type = '厨房用具';  
 ```
 需要明确的是，SET 子句中的列不仅可以是两列，还可以是三列或者更多。
-### 1.5.8 向 product 表中插入数据
+
+### 1.2.8 向 product 表中插入数据
 
 基本语法：
 
@@ -386,7 +358,7 @@ INSERT INTO product VALUES('0007', '擦菜板', '厨房用具', 880, 790, '2008-
 INSERT INTO product VALUES('0008', '圆珠笔', '办公用品', 100, NULL, '2009-11-11');
 COMMIT;
 ```
-# 
+
 # 练习题
 
 ## 1.1
