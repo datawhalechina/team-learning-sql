@@ -116,7 +116,7 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">红星</span></td>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">广东工业大学，Datawhale成员，内测小组成员</td>
-    <td><</td>
+    <td></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">张晋</span></td>
