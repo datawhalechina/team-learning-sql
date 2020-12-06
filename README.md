@@ -91,47 +91,47 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">王复振</span></td>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">Datawhale成员，项目负责人，Task00/01/03内容构建 </td>
-    <td><a href="https://blog.csdn.net/mba1398">CSDN博客</a>,   <a href="https://github.com/mba1398">Github</a></td>
+    <td><a href="https://blog.csdn.net/mba1398">CSDN博客</a></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">杨煜</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，Task05/06内容构建</td>
-    <td><a href="https://aaa">Github</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">数据分析师，公众号：BI数据可视化，Datawhale成员，Task05/06内容构建</td>
+    <td></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">闫钟峰</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，Task00/04内容构建</td>
-    <td><a href="https://aaa">Github</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">图书馆员，Datawhale成员，Task00/04内容构建</td>
+    <td></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">杨梦迪</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，Task02内容构建</td>
-    <td><a href="https://aaa">CSDN博客</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">上海大学，Datawhale成员，Task02内容构建</td>
+    <td></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">苏鹏</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，Task00/01/03内容构建</td>
-    <td><a href="https://aaa">Github</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">东北大学硕士，Datawhale成员，Task00/01/03内容构建</td>
+    <td><a href="https://github.com/SuperSupeng">Github</a></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">红星</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，内测小组成员</td>
-    <td><a href="https://aaa">CSDN</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">广东工业大学，Datawhale成员，内测小组成员</td>
+    <td><</td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">张晋</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，内测小组成员</td>
-    <td><a href="https://aaa">个人主页</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">北京理工大学，Datawhale成员，内测小组成员</td>
+    <td></td>
   </tr>
   <tr>
     <td>汪健麟</td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">XXX，Datawhale成员，内测小组成员</td>
-    <td><a href="https://aaa">知乎</a></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none"电子科技大学硕士，Datawhale成员，内测小组成员</td>
+    <td></td>
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">苏丽敏</span></td>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">北京理工大学硕士，Datawhale成员，助教</td>
-    <td><a href="https://aaa">CSDN</a></td>
+    <td></td>
   </tr>
 </tbody>
 </table> 
