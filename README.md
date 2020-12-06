@@ -124,8 +124,8 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
     <td></td>
   </tr>
   <tr>
-    <td>汪健麟</td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none"电子科技大学硕士，Datawhale成员，内测小组成员</td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">汪健麟</span></td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">电子科技大学硕士，Datawhale成员，内测小组成员</td>
     <td></td>
   </tr>
   <tr>
