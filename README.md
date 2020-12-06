@@ -105,7 +105,7 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
   </tr>
   <tr>
     <td><span style="font-weight:normal;font-style:normal;text-decoration:none">杨梦迪</span></td>
-    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">上海大学，Datawhale成员，Task02内容构建</td>
+    <td><span style="font-weight:normal;font-style:normal;text-decoration:none">上海大学硕士，Datawhale成员，Task02内容构建</td>
     <td></td>
   </tr>
   <tr>
