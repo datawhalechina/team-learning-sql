@@ -16,7 +16,7 @@ leetcode练习题和大厂面试题，顺利完成本课程学习后，应付初
     - [x] [2. 连接 MySQL 并执行 SQL 查询](https://github.com/datawhalechina/team-learning-sql/blob/main/Task00%EF%BC%9A%E7%BB%AA%E8%AE%BA%20-%20%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md#2-%E8%BF%9E%E6%8E%A5-mysql-%E5%B9%B6%E6%89%A7%E8%A1%8C-sql-%E6%9F%A5%E8%AF%A2)
 
 * Task01：初识数据库
-    - [x] [1.1 识数据库](https://github.com/datawhalechina/team-learning-sql/blob/main/Task01%EF%BC%9A%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93.md#11-%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93)
+    - [x] [1.1 初识数据库](https://github.com/datawhalechina/team-learning-sql/blob/main/Task01%EF%BC%9A%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93.md#11-%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93)
     - [x] [1.2 初识SQL](https://github.com/datawhalechina/team-learning-sql/blob/main/Task01%EF%BC%9A%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93.md#11-%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93)
 
 * Task02：基础查询与排序
