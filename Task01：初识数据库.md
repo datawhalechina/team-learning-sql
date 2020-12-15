@@ -13,7 +13,7 @@ DBMS 主要通过数据的保存格式（数据库的种类）来进行分类，
 
 这种类型的 DBMS 称为关系数据库管理系统（Relational Database Management System，RDBMS）。比较具有代表性的 RDBMS 有如下 5 种。
 
-* Oracle Database：甲骨文公司的RDBMS
+    * Oracle Database：甲骨文公司的RDBMS
 * SQL Server：微软公司的RDBMS
 * DB2：IBM公司的RDBMS
 * PostgreSQL：开源的RDBMS
@@ -23,11 +23,7 @@ DBMS 主要通过数据的保存格式（数据库的种类）来进行分类，
 
 - XML数据库（XML Database，XMLDB）
 
-- 键值存储系统（Key-Value Store，KVS）
-
-
-
-举例：mongdb
+- 键值存储系统（Key-Value Store，KVS），举例：MongoDB
 
 本课程将向大家介绍使用 SQL 语言的数据库管理系统，也就是关系数据库管理系统（RDBMS）的操作方法。
 
@@ -45,7 +41,7 @@ DBMS 主要通过数据的保存格式（数据库的种类）来进行分类，
 
 行和列交汇的地方称为单元格，一个单元格中只能输入一条记录。
 
-SQL是为操作数据库而开发的语言。国际标准化组织（ISO）为 SQL 制定了相应的标准，以此为基准的SQL 称为标准 SQL（相关信息请参考专栏——标准 SQL 和特定的 SQL）。
+SQL是为操作数据库而开发的语言。国际标准化组织（ISO）为 SQL 制定了相应的标准，以此为基准的SQL 称为标准 SQL。
 
 完全基于标准 SQL 的 RDBMS 很少，通常需要根据不同的 RDBMS 来编写特定的 SQL 语句，原则上，本课程介绍的是标准 SQL 的书写方式。
 
@@ -199,7 +195,7 @@ DROP TABLE < 表名 > ;
 ```
 * 删除 product 表
 
-需要特别注意的是，删除的表是无法恢复的，只能重新插入，请执行删除操作时无比要谨慎。
+需要特别注意的是，删除的表是无法恢复的，只能重新插入，请执行删除操作时要特别谨慎。
 
 ```sql
 DROP TABLE product;
