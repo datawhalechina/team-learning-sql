@@ -288,6 +288,18 @@ UPDATE product
 
 ### 1.2.8 向 product 表中插入数据
 
+为了学习  `INSERT` 语句用法，我们首先创建一个名为  productins 的表，建表语句如下：
+```sql
+CREATE TABLE productins
+(product_id    CHAR(4)      NOT NULL,
+product_name   VARCHAR(100) NOT NULL,
+product_type   VARCHAR(32)  NOT NULL,
+sale_price     INTEGER      DEFAULT 0,
+purchase_price INTEGER ,
+regist_date    DATE ,
+PRIMARY KEY (product_id)); 
+```
+
 基本语法：
 
 ```sql
@@ -297,37 +309,37 @@ INSERT INTO <表名> (列1, 列2, 列3, ……) VALUES (值1, 值2, 值3, ……
 
 ```sql
 -- 包含列清单
-INSERT INTO ProductIns (product_id, product_name, product_type, sale_price, purchase_price, regist_date) VALUES ('0005', '高压锅', '厨房用具', 6800, 5000, '2009-01-15');
+INSERT INTO productins (product_id, product_name, product_type, sale_price, purchase_price, regist_date) VALUES ('0005', '高压锅', '厨房用具', 6800, 5000, '2009-01-15');
 -- 省略列清单
-INSERT INTO ProductIns VALUES ('0005', '高压锅', '厨房用具', 6800, 5000, '2009-01-15');  
+INSERT INTO productins VALUES ('0005', '高压锅', '厨房用具', 6800, 5000, '2009-01-15');  
 ```
 原则上，执行一次 INSERT 语句会插入一行数据。插入多行时，通常需要循环执行相应次数的 INSERT 语句。其实很多 RDBMS 都支持一次插入多行数据
 
 ```sql
 -- 通常的INSERT
-INSERT INTO ProductIns VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11');
-INSERT INTO ProductIns VALUES ('0003', '运动T恤', '衣服', 4000, 2800, NULL);
-INSERT INTO ProductIns VALUES ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20');
+INSERT INTO productins VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11');
+INSERT INTO productins VALUES ('0003', '运动T恤', '衣服', 4000, 2800, NULL);
+INSERT INTO productins VALUES ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20');
 -- 多行INSERT （ DB2、SQL、SQL Server、 PostgreSQL 和 MySQL多行插入）
-INSERT INTO ProductIns VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11'),
+INSERT INTO productins VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11'),
                               ('0003', '运动T恤', '衣服', 4000, 2800, NULL),
                               ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20');  
 -- Oracle中的多行INSERT
-INSERT ALL INTO ProductIns VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11')
-           INTO ProductIns VALUES ('0003', '运动T恤', '衣服', 4000, 2800, NULL)
-           INTO ProductIns VALUES ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20')
+INSERT ALL INTO productins VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11')
+           INTO productins VALUES ('0003', '运动T恤', '衣服', 4000, 2800, NULL)
+           INTO productins VALUES ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20')
 SELECT * FROM DUAL;  
 -- DUAL是Oracle特有（安装时的必选项）的一种临时表A。因此“SELECT *FROM DUAL” 部分也只是临时性的，并没有实际意义。  
 ```
 INSERT 语句中想给某一列赋予 NULL 值时，可以直接在 VALUES子句的值清单中写入 NULL。想要插入 NULL 的列一定不能设置 NOT NULL 约束。
 
 ```sql
-INSERT INTO ProductIns (product_id, product_name, product_type, sale_price, purchase_price, regist_date) VALUES ('0006', '叉子', '厨房用具', 500, NULL, '2009-09-20');  
+INSERT INTO productins (product_id, product_name, product_type, sale_price, purchase_price, regist_date) VALUES ('0006', '叉子', '厨房用具', 500, NULL, '2009-09-20');  
 ```
 还可以向表中插入默认值（初始值）。可以通过在创建表的CREATE TABLE 语句中设置DEFAULT约束来设定默认值。
 
 ```sql
-CREATE TABLE ProductIns
+CREATE TABLE productins
 (product_id CHAR(4) NOT NULL,
 （略）
 sale_price INTEGER
@@ -337,7 +349,7 @@ PRIMARY KEY (product_id));  
 可以使用INSERT … SELECT 语句从其他表复制数据。
 ```sql
 -- 将商品表中的数据复制到商品复制表中
-INSERT INTO ProductCopy (product_id, product_name, product_type, sale_price, purchase_price, regist_date)
+INSERT INTO productcopy (product_id, product_name, product_type, sale_price, purchase_price, regist_date)
 SELECT product_id, product_name, product_type, sale_price, purchase_price, regist_date
   FROM Product;  
 ```
