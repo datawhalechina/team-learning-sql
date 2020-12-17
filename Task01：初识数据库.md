@@ -323,7 +323,7 @@ INSERT INTO productins VALUES ('0004', '菜刀', '厨房用具', 3000, 2800, '20
 -- 多行INSERT （ DB2、SQL、SQL Server、 PostgreSQL 和 MySQL多行插入）
 INSERT INTO productins VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11'),
                               ('0003', '运动T恤', '衣服', 4000, 2800, NULL),
-                              ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20');  
+                              ('0004', '菜刀', '厨房用具', 3000, 2800, '2009-09-20');  
 -- Oracle中的多行INSERT
 INSERT ALL INTO productins VALUES ('0002', '打孔器', '办公用品', 500, 320, '2009-09-11')
            INTO productins VALUES ('0003', '运动T恤', '衣服', 4000, 2800, NULL)
