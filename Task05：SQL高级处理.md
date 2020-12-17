@@ -27,7 +27,7 @@ SELECT product_name
        ,sale_price
        ,RANK() OVER (PARTITION BY product_type
                          ORDER BY sale_price) AS ranking
-  FROM Product  
+  FROM product  
 ```
 
 得到的结果是:
@@ -84,7 +84,7 @@ SELECT  product_name
        ,RANK() OVER (ORDER BY sale_price) AS ranking
        ,DENSE_RANK() OVER (ORDER BY sale_price) AS dense_ranking
        ,ROW_NUMBER() OVER (ORDER BY sale_price) AS row_num
-  FROM Product  
+  FROM product  
 ```
 
 ![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch05/ch0503.png)
@@ -102,7 +102,7 @@ SELECT  product_id
        ,sale_price
        ,SUM(sale_price) OVER (ORDER BY product_id) AS current_sum
        ,AVG(sale_price) OVER (ORDER BY product_id) AS current_avg  
-  FROM Product;  
+  FROM product;  
 ```
 
 ![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch05/ch0504.png)
@@ -142,7 +142,7 @@ SELECT  product_id
        ,AVG(sale_price) OVER (ORDER BY product_id
                                ROWS BETWEEN 1 PRECEDING 
                                         AND 1 FOLLOWING) AS moving_avg  
-  FROM Product  
+  FROM product  
 ```
 
 **执行结果：**
@@ -171,7 +171,7 @@ ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING：
 SELECT  product_type
        ,regist_date
        ,SUM(sale_price) AS sum_price
-  FROM Product
+  FROM product
  GROUP BY product_type, regist_date WITH ROLLUP  
 ```
 得到的结果为：
@@ -190,18 +190,18 @@ ROLLUP 可以对多列进行汇总求小计和合计。
 
 ## **5.1**
 
-请说出针对本章中使用的 Product（商品）表执行如下 SELECT 语句所能得到的结果。
+请说出针对本章中使用的 product（商品）表执行如下 SELECT 语句所能得到的结果。
 
 ```sql
 SELECT  product_id
        ,product_name
        ,sale_price
        ,MAX(sale_price) OVER (ORDER BY product_id) AS Current_max_price
-  FROM Product
+  FROM product
 ```
 ## **5.2**
 
-继续使用Product表，计算出按照登记日期（regist_date）升序进行排列的各日期的销售单价（sale_price）的总额。排序是需要将登记日期为NULL 的“运动 T 恤”记录排在第 1 位（也就是将其看作比其他日期都早）
+继续使用product表，计算出按照登记日期（regist_date）升序进行排列的各日期的销售单价（sale_price）的总额。排序是需要将登记日期为NULL 的“运动 T 恤”记录排在第 1 位（也就是将其看作比其他日期都早）
 
 ## **5.3**
 
