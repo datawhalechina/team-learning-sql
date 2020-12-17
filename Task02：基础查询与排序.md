@@ -9,8 +9,8 @@
 基本SELECT语句包含了SELECT和FROM两个子句（clause）。示例如下：
 
 ```sql
-SELECT <列名>，
-  FROM <表名>；
+SELECT <列名>, 
+  FROM <表名>;
 ```
 其中，SELECT子句中列举了希望从表中查询出的列的名称，而FROM子句则指定了选取出数据的表的名称。
 ## 2.1.2 从表中选取符合条件的数据
@@ -22,20 +22,20 @@ SELECT <列名>，
 SELECT 语句通过WHERE子句来指定查询数据的条件。在WHERE 子句中可以指定“某一列的值和这个字符串相等”或者“某一列的值大于这个数字”等条件。执行含有这些条件的SELECT语句，就可以查询出只符合该条件的记录了。
 
 ```sql
-SELECT <列名>，……
+SELECT <列名>, ……
   FROM <表名>
- WHERE <条件表达式>；
+ WHERE <条件表达式>;
 ```
 比较下面两者输出结果的不同：
 ```sql
 -- 用来选取product type列为衣服’的记录的SELECT语句
-SELECT product_name，product_type
+SELECT product_name, product_type
   FROM product
- WHERE product_type = '衣服'；
+ WHERE product_type = '衣服';
 -- 也可以选取出不是查询条件的列（条件列与输出列不同）
 SELECT product_name
   FROM product
- WHERE product_type = '衣服'；
+ WHERE product_type = '衣服';
 ```
 ## 
 ## 2.1.3 相关法则
@@ -77,9 +77,9 @@ SQL语句中可以使用的四则运算的主要运算符如下：
 
 ```sql
 -- 选取出sale_price列为500的记录
-SELECT product_name，product_type
+SELECT product_name, product_type
   FROM product
- WHERE sale_price = 500；
+ WHERE sale_price = 500;
 ```
 SQL常见比较运算符如下：
 |运算符|含义|
@@ -103,31 +103,31 @@ SQL常见比较运算符如下：
 
 ```sql
 -- SQL语句中也可以使用运算表达式
-SELECT product_name,sale_price,sale_price * 2 AS "sale_price x2"
+SELECT product_name, sale_price, sale_price * 2 AS "sale_price x2"
   FROM product;
 -- WHERE子句的条件表达式中也可以使用计算表达式
-SELECT product_name，sale_price，purchase_price
+SELECT product_name, sale_price, purchase_price
   FROM product
- WHERE sale_price-purchase_price >= 500；
+ WHERE sale_price-purchase_price >= 500;
 /* 对字符串使用不等号
 首先创建chars并插入数据
 选取出大于‘2’的SELECT语句*/
 -- DDL：创建表
 CREATE TABLE chars
-（chr CHAR（3）NOT NULL，
-PRIMARY KEY（chr））；
+（chr CHAR（3）NOT NULL, 
+PRIMARY KEY（chr））;
 -- 选取出大于'2'的数据的SELECT语句('2'为字符串)
 SELECT chr
   FROM chars
- WHERE chr > '2'；
+ WHERE chr > '2';
 -- 选取NULL的记录
-SELECT product_name，purchase_price
+SELECT product_name, purchase_price
   FROM product
- WHERE purchase_price IS NULL；
+ WHERE purchase_price IS NULL;
 -- 选取不为NULL的记录
-SELECT product_name，purchase_price
+SELECT product_name, purchase_price
   FROM product
- WHERE purchase_price IS NOT NULL；
+ WHERE purchase_price IS NOT NULL;
 ```
 # 
 # 2.3 逻辑运算符
@@ -140,13 +140,13 @@ NOT不能单独使用，如下例：
 
 ```sql
 -- 选取出销售单价大于等于1000日元的记录
-SELECT product_name，product_type，sale_price
+SELECT product_name, product_type, sale_price
   FROM product
- WHERE sale_price >= 1000；
+ WHERE sale_price >= 1000;
 -- 向代码清单2-30的查询条件中添加NOT运算符
-SELECT product_name，product_type，sale_price
+SELECT product_name, product_type, sale_price
   FROM product
- WHERE NOT sale_price >= 1000；
+ WHERE NOT sale_price >= 1000;
 ```
 ## 
 ## 2.3.2 AND运算符和OR运算符
@@ -472,15 +472,15 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY。
 请指出下述SELECT语句中所有的语法错误。
 
 ```sql
-SELECT product id，SUM（product name）
+SELECT product_id, SUM（product_name）
 --本SELECT语句中存在错误。
   FROM product 
  GROUP BY product_type 
- WHERE regist_date > '2009-09-01'；
+ WHERE regist_date > '2009-09-01';
 ```
 ### 2.6
 
-请编写一条SELECT语句，求出销售单价（sale_price列）合计值是进货单价（purchase prilce列）合计值1.5倍的商品种类。执行结果如下所示。
+请编写一条SELECT语句，求出销售单价（ `sale_price` 列）合计值大于进货单价（ `purchase_price` 列）合计值1.5倍的商品种类。执行结果如下所示。
 
 ```sql
 product_type | sum  | sum 
