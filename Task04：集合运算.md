@@ -1178,7 +1178,7 @@ SELECT SP.shop_id
 
 # **4.5** 
 
-试将上述查询改用关联子查询实现：取出 product_id, produc_name, slae_price, 并按照商品的售价从低到高进行排序、对售价进行累计求和。
+用关联子查询实现：在 product 表中，取出 product_id, produc_name, slae_price, 并按照商品的售价从低到高进行排序、对售价进行累计求和。
 
 
 
