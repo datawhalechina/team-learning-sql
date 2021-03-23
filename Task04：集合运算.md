@@ -958,7 +958,7 @@ ON SP.product_id = IP.product_id
 SELECT  product_id
        ,product_name
        ,sale_price
-       ,COUNT(p2_id) AS rank
+       ,COUNT(p2_id) AS my_rank
   FROM (--使用自左连结对每种商品找出价格不低于它的商品
         SELECT P1.product_id
                ,P1.product_name
@@ -971,7 +971,7 @@ SELECT  product_id
             ON P1.sale_price <= P2.sale_price 
         ) AS X
  GROUP BY product_id, product_name, sale_price
- ORDER BY rank; 
+ ORDER BY my_rank; 
 ```
 注 1: COUNT 函数的参数是列名时, 会忽略该列中的缺失值, 参数为 * 时则不忽略缺失值.
 注 2: 上述排名方案存在一些问题--如果两个商品的价格相等, 则会导致两个商品的排名错误, 例如,  叉子和打孔器的排名应该都是第六, 但上述查询导致二者排名都是第七. 试修改上述查询使得二者的排名均为第六.
