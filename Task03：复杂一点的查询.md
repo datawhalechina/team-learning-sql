@@ -16,7 +16,7 @@ SELECT stu_name FROM view_students_info;
 
 《*sql**基础**教程**第2版*》用一句话非常凝练的概括了视图与表的区别---“是否保存了实际的数据”。所以视图并不是数据库真实存储的数据表，它可以看作是一个窗口，通过这个窗口我们可以看到数据库表中真实存在的数据。所以我们要区别视图和数据表的本质，即视图是基于真实表的一张虚拟的表，其数据来源均建立在真实表的基础上。
 
-![图片](https://uploader.shimo.im/f/YnTlq5vR65wRlPdk.png!thumbnail)
+![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch03/ch03.01view.png)
 
 *图片来源：《sql基础教程第2版》*
 
