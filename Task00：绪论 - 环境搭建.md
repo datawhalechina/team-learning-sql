@@ -26,7 +26,7 @@ MySQL 官网上的社区版软件的下载地址[https://dev.mysql.com/downloads
 
 进入到[MySQL Installer for Windows](https://dev.mysql.com/downloads/windows/)页面后, 选择下载下方的完整安装程序.
 
-![图片](https://github.com/datawhalechina/team-learning-sql/blob/main/img/ch00/ch0001.png)
+![图片](./img/ch00/ch0001.png)
 
 在下载页面选择下方的不注册,仅下载.
 
