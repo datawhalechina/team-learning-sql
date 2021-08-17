@@ -356,7 +356,7 @@ SELECT product_id, product_name, product_type, sale_price, purchase_price, regis
 * 本课程用表插入数据sql如下：
 ```sql
 - DML ：插入数据
-STARTTRANSACTION;
+START TRANSACTION;
 INSERT INTO product VALUES('0001', 'T恤衫', '衣服', 1000, 500, '2009-09-20');
 INSERT INTO product VALUES('0002', '打孔器', '办公用品', 500, 320, '2009-09-11');
 INSERT INTO product VALUES('0003', '运动T恤', '衣服', 4000, 2800, NULL);
