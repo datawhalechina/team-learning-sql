@@ -1,5 +1,7 @@
 # SQL基础教程学习笔记（team-learning-sql）
 
+# 最新项目地址为 [https://github.com/datawhalechina/wonderful-sql](https://github.com/datawhalechina/wonderful-sql)
+
 SQL 在诸多工作中应用广泛，数据分析、开发、测试、维护、产品经理都有可能会用到SQL，而在大学里曾经系统学习SQL的人比较少，
 这就要求我们在工作中来学习SQL。然而，自己学习很容易走弯路。笔者通过近几年的摸索学习，发现了一本很好的教材[《SQL基础教程 第2版》](https://book.douban.com/subject/27055712/)作者：MICK,
 我如获至宝，心想这么好的教材应该让更多的人了解到，以便小伙伴们少走弯路，于是乎，我就联合DataWhale团队成员编写了这一版学习笔记。希望可以帮你更好的学习SQL。
