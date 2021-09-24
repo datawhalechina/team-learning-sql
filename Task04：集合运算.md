@@ -140,7 +140,7 @@ SELECT *
  UNION ALL
 SELECT * 
   FROM Product 
- WHERE sale_price > 1.5 * purchase_price
+ WHERE sale_price < 1.5 * purchase_price
 ```
 ### 4.1.2.4 [扩展阅读]bag 模型与 set 模型 
 
